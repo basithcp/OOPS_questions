@@ -1,0 +1,127 @@
+TWO BROAD CATEGORIES OF PROGRAMMING
+
+1) function oriented :- entire programme into large set of small functions; global data base;
+2) object oriented :- programm is formed as a set of objects; no global database; data are distributed among different objects; objects are communicating with each other;
+
+
+| **Feature**              | **FOP (Function Oriented Programming)**        | **OOP (Object Oriented Programming)**                         |
+| ------------------------ | ---------------------------------------------- | ------------------------------------------------------------- |
+| **Program organization** | Divided into small pieces of functions         | Divided into parts called objects                             |
+| **Importance**           | Importance is not given to data but functions  | Importance is given to data rather than procedures            |
+| **Approach**             | Top-down                                       | Bottom-up                                                     |
+| **Access specifier**     | Does not have any access specifier             | Has access specifiers namely private, public, protected       |
+| **Data moving**          | Data can move freely from function to function | Object can move and communicate with each other, not the data |
+| **Data hiding**          | No data hiding is possible                     | Data hiding possible                                          |
+| **Overloading**          | Polymorphism not possible                      | Polymorphism possible                                         |
+
+
+FOUR PILLARS OF OOP
+
+1) Encapsulation :- Encapsulate code and data together in class;
+                    Hiding implementation details of an object from its clients;
+                    Encapsulation provides abstraction;  
+                    separates external view (behavior) from internal view(state);
+2) Inheritance :- Reusing the properties of one class into another class;
+                  Inheritance should create an is a relationship , meaning the child is a more specific version of the parent;
+3) information Hiding (abstraction) :- Data should not be accessible to every one, but only gives a view
+4) Polymorphism :- With the same name it can execute different operations;
+                   Polymorphism is a very important concept, here the concept is that with the
+                   same name , but it can execute a different operations.
+
+
+class BankAccount {
+    private double balance;  // encapsulated
+
+    public void deposit(double amount) {
+        if(amount > 0) balance += amount;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+🔍 You can’t directly access balance. You must go through methods—this is encapsulation.
+
+
+abstract class Remote {
+    abstract void pressPowerButton();  // only declare the feature
+}
+
+class TVRemote extends Remote {
+    void pressPowerButton() {
+        System.out.println("Turning on the TV...");
+    }
+}
+🧩 You don’t need to know how the remote turns on the TV—just what it does. That’s abstraction.
+
+
+How abstract class helps abstraction:
+You can define what needs to be done but let subclasses decide how to do it.
+
+eg :-
+
+abstract class Animal {
+    abstract void makeSound(); // abstract method (no body)
+
+    void sleep() {
+        System.out.println("Sleeping...");
+    }
+}
+
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Bark");
+    }
+}
+🟩 Animal defines what an animal can do (like make sound), but Dog defines how.
+
+REAL LIFE EXAMPLES OF FOUR PILLARS :-
+
+
+1. 🔒 Encapsulation — "Protecting data"
+Real-life example: ATM Machine
+
+You insert your card and enter a PIN.
+
+You don’t see or access the actual logic, network, or database.
+
+The machine encapsulates all that complexity.
+
+
+2. 🧠 Abstraction — "Hiding implementation details"
+Real-life example: TV Remote
+
+You press the power button.
+
+You don’t know (or need to know) the complex internal circuit operations.
+
+You only see and use the abstracted features.
+
+
+3. 🧬 Inheritance — "Reusing existing features"
+Real-life example: Parent and Child
+
+A child inherits traits from parents (like eye color, behavior).
+
+Similarly, a class can inherit fields and methods from another class.
+
+
+4. 🔁 Polymorphism — "Many forms of the same action"
+Real-life example: Person in different roles
+
+A person can be a teacher in school, a parent at home, and a customer in a shop.
+
+One individual, multiple forms.
+
+✅ Real-Life Analogy (Better One)
+🧑 Person speaking:
+A teacher says “Hello” in class → formal tone
+
+The same person says “Hello” to a friend → casual tone
+
+To a baby → playful tone
+
+🎯 Same action ("say Hello") — different results based on context (role/object).
+That’s polymorphism.
+
+
