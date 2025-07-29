@@ -1,0 +1,80 @@
+There are two types of polymorphism in Java:
+1) compile time polymorphism
+2) runtime polymorphism.
+
+We can perform polymorphism in java by method overloading and method overriding.
+
+
+Runtime polymorphism or Dynamic Method Dispatch is a process
+in which a call to an overridden method is resolved at runtime rather
+than compile time.
+In this process, an overridden method is called through the reference
+variable of a superclass. The determination of the method to be called
+is based on the object being referred to by the reference variable.
+
+
+If the
+reference variable of Parent class refers to the object of Child
+class, it is known as upcasting.
+
+class X{}
+class B extends X{}
+X a = new B();//upcasting
+
+
+Connecting a method call
+to the method body is known as binding
+There are
+two types of binding:
+•Static Binding (also known as Early Binding).
+•Dynamic Binding (also known as Late Binding).
+
+When
+type of the object is determined at compiled time (by the compiler), it
+is known as static binding
+If there is any
+private, final or static method in a class, there is static binding.
+
+
+
+
+FINAL KEYWORD
+
+
+
+•
+The final keyword in java is used to restrict the user . The java final
+keyword can be used in many context. Final can be:
+•
+variable
+•
+method
+•
+class
+•
+final variable that have no value it is called blank final variable or
+uninitialized final variable .
+•
+It can be initialized in the constructor only .
+•
+The blank final variable can be static also which will be initialized in the
+static block only .
+Java final variable: If you make any
+variable as final , you cannot change the
+value of final variable ( It will be constant
+
+
+
+
+Methods can be qualified with the final modifier
+Final methods cannot be overridden.
+This can be useful for security purposes.
+
+
+
+Classes can be qualified with the final modifier
+The class cannot be extended
+This can be used to improve performance. Because there an be no
+subclasses, there will be no polymorphic overhead at runtime.
+
+
