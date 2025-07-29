@@ -1,0 +1,37 @@
+Features of Java
+
+1. Simple
+Java is easy to learn and understand. It has a clean and easy-to-read syntax, similar to C++, but removes many complex features like pointers and operator overloading.
+
+2. Performance
+Java's performance is good because the Java Virtual Machine (JVM) compiles bytecode to native machine code using Just-In-Time (JIT) compilers. Though it’s not as fast as C/C++, it balances performance and portability well.
+
+3. Secure
+Java is designed with security in mind. It has features like bytecode verification, runtime security checks, and a security manager that helps in building virus-free, tamper-free systems.
+
+4. Object-Oriented
+Java follows the object-oriented programming paradigm, making it easier to manage and modify code. Key concepts include classes, objects, inheritance, polymorphism, abstraction, and encapsulation.
+
+5. Interpreted
+Java source code is compiled into bytecode, which is interpreted and executed by the JVM. This makes Java platform-independent.
+
+6. Multithreaded
+Java supports multithreading, allowing multiple threads (smallest units of a process) to run concurrently. This is useful for tasks like animations, real-time games, and server handling.
+
+7. Portable
+Java code can be written once and run anywhere (Write Once, Run Anywhere). As long as the system has a JVM, it can run Java bytecode regardless of hardware or OS.
+
+8. Distributed
+Java supports networking and remote method invocation (RMI), allowing programs to work across the internet and share objects and resources easily.
+
+9. Robust
+Java emphasizes early error checking, runtime exception handling, and garbage collection, which makes it reliable and less prone to crashes.
+
+10. Dynamic
+Java programs can adapt to evolving environments. It supports dynamic memory allocation and can load classes at runtime, enabling dynamic linking and loading of new code.
+
+11. High Performance
+Although interpreted, Java is optimized with the use of JIT compiler and efficient memory management, which enables high performance compared to other interpreted languages.
+
+
+
