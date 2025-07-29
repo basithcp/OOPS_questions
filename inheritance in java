@@ -1,0 +1,36 @@
+Economy of time:
+When you implement Employee, you already have all
+functionality of Person. No need to reimplement
+Parameter passing:
+If you have a function that expects a Person, you
+can pass an Employee, and it is still fine.
+
+Container classes (linked lists, binary trees, etc.) can be defined to hold a
+Person, and can hold any subclass of Person
+
+
+*by default all classes, inherits Object class
+
+
+
+TYPES OF INHERITANCE
+
+1) Single Inheritance
+2) multilevel inheritance
+3) hierarchial inheritance
+4) multiple ( through interfaces in java) inheritance
+5) hybrid inheritance
+
+
+Object References and Inheritance
+
+A superclass reference
+can refer to an instance of the superclass OR an
+instance of ANY class which inherits from the superclass
+
+eg:-
+
+BankAccount anAccount = new BankAccount(123456, "Craig");
+BankAccount account1 = new OverdraftAccount(3323, "John", 1000.0);
+
+while calling account1.withdraw() , the function will be determined only in runtime yields run time polymorphism
