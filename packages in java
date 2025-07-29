@@ -67,3 +67,39 @@ In fact, javax swing is an extended package of java awt
 sql stands structured query language This package helps to
 connect to databases like Oracle or Sybase, retrieve the data from them
 and use it in a Java program
+
+
+CREATING PACKAGES
+
+Java
+supports a keyword called “ for creating user defined packages The
+package statement must be the first statement in a Java source file (except comments
+and white spaces) followed by one or more classes
+package
+----------------------
+  myPackage
+  public
+  class ClassA{
+    //class body
+  }
+-----------------------
+Package name is myPackage and classes are considered as part of this package The
+code is saved in a file called “ClassA java and located in a directory called
+myPackage
+
+
+COMPILATION
+
+javac d . Simple.java
+
+The
+d switch specifies the destination where to put the generated class file . You
+can use any directory name like /home (in case of Linux), d:/abc (in case of
+windows) etc. If you want to keep the package within the same directory, you can
+use . (dot).
+
+
+To Compile:
+javac -d . Simple.java
+To Run: 
+java mypack.Simple
