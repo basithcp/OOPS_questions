@@ -1,0 +1,69 @@
+•  java package grouping a number of related classes and/or interfaces
+together into a single unit That means, packages act as containers for
+classes
+•  Package in java can be categorized in two form , built in package and
+user defined package.
+•  There are many built in packages such as java, lang , awt , javax , swing,
+net, io , util , sql etc.
+
+
+•  The benefits of organising classes into packages are
+-  The classes contained in the packages of other programs/applications
+can be reused
+-  In packages classes can be unique compared with classes in other
+packages That two classes in two different packages can have the same
+name If there is a naming clash, then classes can be accessed with
+their fully qualified name
+-  Classes in packages can be hidden if we don’t want other packages to
+access them
+-  Packages also provide a way for separating design from coding
+
+
+six foundation Java packages are
+1)java lang
+includes
+the Java language classes, including Object, Thread, Exception,
+System, Integer, Float, Math, String, and so on
+
+2)java util
+This
+class packages contains miscellaneous classes that are useful for a
+variety of programming chores Those classes include Date, Dictionary,
+Random (for creating random number), Vector, and Stack (for
+implementing a last in first out ( stack)
+
+3)java io
+The
+I/O Package include file input and output classes such as the classes
+FileInputStream and FileOutputStream
+
+4) java net
+This
+class supports the TCP/IP networking protocols and includes the
+Socket, SenverSocket DatagramPacket DategramSocket URL, and
+URLConnection classes among others
+
+5) java awt
+The
+Abstract Windowing Toolkit ( package, awt contains classes used
+to generate widgets and GUI (Graphical User Interface) This package
+includes the classes Button, CheckBox Choice, Component, Graphics,
+Menu, Panel, TextArea and TextField
+
+
+6) java applet
+This
+package includes classes designed for use within an applet There is one
+class, Applet and three interfaces AppletContex AppletStub and AudioClip
+
+7) java swing
+this package helps to develop GUI like java awt The “ in
+javax represents that it is an extended package which means it is a
+package developed from another package by adding new features to it
+In fact, javax swing is an extended package of java awt
+
+
+8) java sql
+sql stands structured query language This package helps to
+connect to databases like Oracle or Sybase, retrieve the data from them
+and use it in a Java program
