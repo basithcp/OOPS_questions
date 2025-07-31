@@ -1,0 +1,63 @@
+A class which is declared with the abstract keyword is known as an abstract class in Java.
+
+It can have abstract and non-abstract methods (method with the body). It needs to be extended and its method implemented. It cannot be instantiated.
+
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+There are two ways to achieve abstraction in java
+•Abstract class (0 to 100%)
+•Interface (100%)
+
+rules for abstract classes :-
+abstract keyword
+abstract and non abstract methods
+cant be instantiated
+it can have final methods
+it can have constructors
+it can have static functions
+
+
+INTERFACE - higher ABSTRACTION
+
+helps to implement multiple inheritance :- either a class implements multiple interfaces or an interface extends multiple iinterfaces
+a class extending an interface should implement all the methods
+created with a keyword interface
+it cant be instantiated
+it cannot have a constructor
+
+int x = 5 -------> public static final int x = 5
+void f()  -------> public abstract void f()
+
+it can have default void f() functions which can have a body
+it can have static methods
+
+public class  Main{
+    public static void main(String args[]){
+        Draw ob=new Rect();
+        ob.cube(); // error since static function in interface cannot be called through objects, rather call it with class/interface name
+        System.out.println(Rect.cube(3));
+        System.out.println(Draw.cube(3));
+    }
+}
+interface Draw
+{
+    void d();
+    static int cube(int x)
+    {
+        return x*x*x;
+    }
+}
+class Rect implements Draw
+{
+    public void d()
+    {
+        System.out.println("drawing rectangle");
+    }
+    static int cube(int x){
+        return x+x+x;
+    }
+}
+
+
+
+
