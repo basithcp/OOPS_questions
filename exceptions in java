@@ -1,0 +1,156 @@
+Exception is an indication of problem during execution
+
+“exception” occurs infrequently e.g., divide by zero
+
+An exception is an event that disrupts the normal flow of the program.
+It is an object which is thrown at runtime.
+
+Exception Handling is a mechanism to handle runtime errors such as ClassNotFoundException, IOException, SQLException, RemoteException, etc.
+
+The core advantage of exception handling isto maintain the normal flow of the application.
+An exception normally disrupts the normal flow of the application, that is why we need to handle exceptions.
+
+Throwable :- 1) Exception 2) Error
+
+Exception :- IOException   SQLException ClassNotFoundException RuntimeException
+
+RuntimeException :- ArithmeticException NullPointerException NumberFormatException ArrayIndexOutOfBoundsException StringIndexOutOfBoundsException
+
+Error :- StackOverflowError VirtualMachineError OutOfMemoryError
+
+
+Exception can be checked or unchecked
+
+checked exception :- The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions.
+                     Checked exceptions are checked at compile-time.
+unchecked exception :- The classes that inherit the RuntimeException are known as unchecked exceptions.
+                       Unchecked exceptions are not checked at compile-time, but they are checked at runtime.
+error :- Error is irrecoverable. Some example of errors are OutOfMemoryError, VirtualMachineError, AssertionError etc.
+
+
+KEYWORDS :- try catch finally throw throws
+
+The JVM firstly checks whether the exception is handled or not. If exception is not handled, JVM provides a default exception handler that performs the following tasks:
+•
+Prints out exception description.
+•
+Prints the stack trace (Hierarchy of methods where the exception occurred).
+•
+Causes the program to terminate.
+
+while using multiple catch blocks, the parameter exceptions should be from most specific to most generic
+
+
+
+
+
+
+
+
+
+When any
+try block does not have a catch block for a particular exception:
+•
+catch block of the outer (parent) try block are checked for that exception , and
+if it matches , the catch block of outer try block is executed
+If
+none of the catch block specified in the code is unable to handle the exception:
+Java runtime system will handle the exception.
+Then
+it displays the system generated message for that exception
+
+
+
+•
+Java finally block is always executed whether an
+exception is handled or not .
+•
+It contains all the necessary statements that need to be
+printed regardless of the exception occurs or not
+•
+The finally block follows the try catch block
+•
+It can be used to put " cleanup" code such as closing a
+file, closing connection, etc.
+•
+The important statements to be printed can be placed in
+the finally block.
+
+
+
+•
+The Java throw keyword is used to throw an
+exception explicitly.
+•
+We specify the exception object which is to be
+thrown.
+•
+The Exception has some message with it that
+provides the error description .
+•
+These exceptions may be related to user inputs,
+server, etc.
+•
+We can throw either checked or unchecked
+exceptions in Java by throw keyword.
+•
+It is mainly used to throw a custom exception.
+
+throw new exception_class ("error message")
+throw new IOException ("sorry device error");
+
+
+
+
+//user defined exception
+class MyException extends Exception
+{
+  public MyException (String str)
+  {
+    super(str)
+  }
+}
+
+
+JAVA EXCEPTION PROPOGRATION
+
+checked exceptions are not propogated
+
+
+•
+The Java throws keyword is used to declare an exception
+•
+It gives an information to the programmer that there may occur an
+exception.
+•
+exception handling code to be provided so that the normal flow of
+the program can be maintained.
+•
+Exception Handling is mainly used to handle the checked
+exceptions.
+•
+checked exceptions can be propagated by throws keyword
+
+
+
+
+
+
+
+
+
+
+Exception Handling with Method
+Overriding
+•
+If the superclass method does not declare an exception
+•
+subclass overridden method cannot declare the
+checked exception but it can declare unchecked
+exception.
+•
+If the superclass method declares an exception
+•
+subclass overridden method can declare same,
+subclass exception or no exception but cannot declare
+parent exception.
